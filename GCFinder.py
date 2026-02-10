@@ -11,6 +11,5 @@ def gcf_finder():
             num2f = y
     x = x + 1
     y = y + 1
-    if num2f == num1f:
-        print(max(num2f))
+    list = num2f == num1f
 gcf_finder()
