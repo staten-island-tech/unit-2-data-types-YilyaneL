@@ -1,15 +1,9 @@
 num1 = int(input("put your first number "))
 num2 = int(input("put your second number "))
-def gcf_finder():
-    x=1
-    y=1
-    for i in (range(x, num1)):
-        if (num1 % x == 0):
-            num1f = x
-    for i in (range(y, num2)):
-        if (num2 % y == 0):
-            num2f = y
+def gcfinder():
+    x = 1
+    for i in range(x, num1, num2):
+        if num1 % x and num2 % x == 0:
+            print(x)
     x = x + 1
-    y = y + 1
-    list = num2f == num1f
-gcf_finder()
+gcfinder()
