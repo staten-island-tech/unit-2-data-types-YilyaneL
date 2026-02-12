@@ -1,8 +1,7 @@
 def find_factor():
     x = 1
     num = int(input("number you want to find the factors of: "))
-    print(num)
-    for i in (range(x, num)):
+    for i in (range(x, num+1)):
         if (num % x == 0):
             print(x)
         x = x + 1
